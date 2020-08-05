@@ -164,7 +164,8 @@ ignore the <code>public/</code> forlder. We will later on push this folder to an
 <p>Go to <a href="www.github.com">github</a> and create a new repository with the name <code>&lt;YOURUSERNAME&gt;.github.io</code>. Your html files
 will be saved in this repository. Before we push our website to github, we need to remove the <code>public/</code> folder:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rm -rf public
-</code></pre></div><p>Now we need to add a git submodule in your <code>blog</code> folder that has a remote in you newly created
+</code></pre></div><p>In <code>config.toml</code> change the line setting the baseurl to: <code>baseurl = &quot;/&quot;</code>.</p>
+<p>Now we need to add a git submodule in your <code>blog</code> folder that has a remote in you newly created
 <code>&lt;YOURUSERNAME&gt;.github.io</code>:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git submodule add -b master https://github.com/&lt;YOURUSERNAME&gt;/&lt;YOURUSERNAME&gt;.github.io.git public
 </code></pre></div><p>Then build you website using the <code>hugo</code> command:</p>
