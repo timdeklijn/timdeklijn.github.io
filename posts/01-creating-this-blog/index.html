@@ -153,12 +153,15 @@ install Hugo:</p>
 applied. The <a href="https://gohugo.io/getting-started/quick-start/">Hugo Quickstart Guide</a> supplies commands to create an
 initial framework of a website called &lsquo;blog&rsquo;:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new site blog
-</code></pre></div><p>Then a theme can be found on a <a href="https://themes.gohugo.io/">theme gallery</a>.</p>
+</code></pre></div><p>Then a theme can be found on a <a href="https://themes.gohugo.io/">theme gallery</a>. Generally, on the theme website there is a
+good explanation on how to install the theme for a hugo website. It will be something like:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#0086b3">cd</span> blog
 git init
 git submodule add &lt;theme-repository&gt; themes/&lt;theme-name&gt;
-</code></pre></div><p>Copy <code>theme.toml</code> from the theme folder into <code>config.toml</code> in the main folder of the project.</p>
-<p>Add a new post</p>
+</code></pre></div><p>Since each themae has a different configuration and setup, the easiest way to apply the theme is to copy <code>theme.toml</code>
+from the <code>themes</code> folder to <code>config.toml</code> in the main folder of the project.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cp themes/theme.toml config.toml
+</code></pre></div><p>Add a new post</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new posts/&lt;name-of-post&gt;.md
 </code></pre></div><p>When done editing the posts, run the following command to build the website:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo server -D
