@@ -3,15 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>timdeklijn.github.io/categories/</loc>
+    <loc>timdeklijn.github.io/posts/02-creating-this-blog/</loc>
+    <lastmod>2020-07-17T12:56:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>timdeklijn.github.io/tags/github/</loc>
+    <lastmod>2020-07-17T12:56:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>timdeklijn.github.io/tags/hugo/</loc>
+    <lastmod>2020-07-17T12:56:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>timdeklijn.github.io/posts/</loc>
+    <lastmod>2020-07-17T12:56:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>timdeklijn.github.io/tags/</loc>
+    <lastmod>2020-07-17T12:56:33+02:00</lastmod>
   </url>
   
   <url>
     <loc>timdeklijn.github.io/</loc>
+    <lastmod>2020-07-17T12:56:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>timdeklijn.github.io/categories/</loc>
   </url>
   
 </urlset>
