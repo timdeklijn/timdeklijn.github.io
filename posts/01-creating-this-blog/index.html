@@ -168,7 +168,7 @@ git init
 git submodule add &lt;theme-repository&gt; themes/&lt;theme-name&gt;
 </code></pre></div><p>Since each theme has a different configuration and setup, the easiest way to apply the theme is to copy <code>theme.toml</code>
 from the <code>themes</code> folder to <code>config.toml</code> in the main folder of the project.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cp themes/theme.toml config.toml
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cp themes/exampleSite/config.toml config.toml
 </code></pre></div><p>A new post can be added by manually creating a Markdown file, but an faster solution is to use the following command:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new posts/&lt;name-of-post&gt;.md
 </code></pre></div><p>This ensures that a header containing metadata is added to the Markdown file. Notice the <code>draft = true</code> flag. This
