@@ -18,7 +18,7 @@
       
       <guid>https://timdeklijn.github.io/posts/01-creating-this-blog/</guid>
       <description>While building this website I documented the steps and decided that how to publish this website should be the first blog post on this site. The tools used for building this website and discussed in this post are: Hugo and Github Pages.
-What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. The reason I choose this framework is that it is fast, customizable, under active development and written in Go, a language I really like.</description>
+What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. Reasons to choose this framework are that it is fast, customizable and under active development.</description>
     </item>
     
   </channel>

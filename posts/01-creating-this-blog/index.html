@@ -8,7 +8,7 @@
 
     <meta name="author" content="Tim de Klijn">
     <meta name="description" content="While building this website I documented the steps and decided that how to publish this website should be the first blog post on this site. The tools used for building this website and discussed in this post are: Hugo and Github Pages.
-What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. The reason I choose this framework is that it is fast, customizable, under active development and written in Go, a language I really like.">
+What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. Reasons to choose this framework are that it is fast, customizable and under active development.">
     <meta name="keywords" content="blog,developer,personal,Data Science,data engineering">
 
     
@@ -16,11 +16,11 @@ What is Hugo? Hugo is a static site generator with fast building times. It allow
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating This Blog"/>
 <meta name="twitter:description" content="While building this website I documented the steps and decided that how to publish this website should be the first blog post on this site. The tools used for building this website and discussed in this post are: Hugo and Github Pages.
-What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. The reason I choose this framework is that it is fast, customizable, under active development and written in Go, a language I really like."/>
+What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. Reasons to choose this framework are that it is fast, customizable and under active development."/>
 
     <meta property="og:title" content="Creating This Blog" />
 <meta property="og:description" content="While building this website I documented the steps and decided that how to publish this website should be the first blog post on this site. The tools used for building this website and discussed in this post are: Hugo and Github Pages.
-What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. The reason I choose this framework is that it is fast, customizable, under active development and written in Go, a language I really like." />
+What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. Reasons to choose this framework are that it is fast, customizable and under active development." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://timdeklijn.github.io/posts/01-creating-this-blog/" />
 <meta property="article:published_time" content="2020-08-05T15:16:33+02:00" />
@@ -124,7 +124,7 @@ What is Hugo? Hugo is a static site generator with fast building times. It allow
           </div>
           <div class="categories">
   <i class="fas fa-folder"></i>
-    <a href="https://timdeklijn.github.io/categories/tutorial/">tutorial</a></div>
+    <a href="https://timdeklijn.github.io/categories/tutorials/">tutorials</a></div>
 
           <div class="tags">
   <i class="fas fa-tag"></i>
@@ -142,18 +142,15 @@ post on this site. The tools used for building this website and discussed in thi
 and <a href="https://pages.github.com/">Github Pages</a>.</p>
 <h2 id="what-is-hugo">What is Hugo?</h2>
 <p>Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates
-these documents to html. The reason I choose this framework is that it is fast, customizable, under active development
-and written in Go, a language I really like.</p>
-<h2 id="install-hugo">Install Hugo</h2>
-<p>First install Hugo, for MacOS this can be done using <a href="https://brew.sh/">homebrew</a>:</p>
+these documents to html. Reasons to choose this framework are that it is fast, customizable and under active
+development.</p>
+<h2 id="installing-hugo">Installing Hugo</h2>
+<p>On MacOS, Hugo can be installed using <a href="https://brew.sh/">homebrew</a>. In the terminal the following commands downloads and
+install Hugo:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install hugo
-</code></pre></div><h2 id="what-is-github-pages">What is Github Pages?</h2>
-<p><a href="https://pages.github.com/">Github Pages</a> is a tool from github that builds and publishes a website from a github
-repository. The setup is easy and because it is serving a website from a repository it makes version controlling a
-web site really easy.</p>
-<h2 id="create-website">Create Website</h2>
+</code></pre></div><h2 id="creating-a-website">Creating a Website</h2>
 <p>The <a href="https://gohugo.io/getting-started/quick-start/">Hugo Quickstart Guide</a> gives commands to create an initial website
-called &ldquo;blog&rdquo;:</p>
+called &lsquo;blog&rsquo;:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new site blog
 </code></pre></div><p>adding a theme</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#0086b3">cd</span> blog
@@ -165,6 +162,10 @@ git submodule add &lt;theme-repository&gt; themes/&lt;theme-name&gt;
 </code></pre></div><p>When done editing the posts, run the following command to build the website:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo server -D
 </code></pre></div><p>If the site looks good enough to be published, close the server using <code>CTRL-C</code>.</p>
+<h2 id="what-is-github-pages">What is Github Pages?</h2>
+<p><a href="https://pages.github.com/">Github Pages</a> is a tool from github that builds and publishes a website from a github
+repository. The setup is easy and because it is serving a website from a repository it makes version controlling a
+website really easy.</p>
 <h2 id="publish-the-blog-on-githubio">Publish the blog on github.io</h2>
 <p>First, create a repository for you blog files (call it <code>blog</code> for example). Make sure that in your <code>.gitignore</code> you
 ignore the <code>public/</code> forlder. We will later on push this folder to another repoisory to publish the website.</p>
