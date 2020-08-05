@@ -26,8 +26,8 @@ Install Hugo First install Hugo, for MacOS this can be done using homebrew:
 brew install hugo Create Website The Hugo Quickstart Guide gives commands to create an initial website called &ldquo;blog&rdquo;:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://timdeklijn.github.io/posts/01-creating-this-blog/" />
-<meta property="article:published_time" content="2020-07-17T12:56:33+02:00" />
-<meta property="article:modified_time" content="2020-07-17T12:56:33+02:00" />
+<meta property="article:published_time" content="2020-08-05T15:16:33+02:00" />
+<meta property="article:modified_time" content="2020-08-05T15:16:33+02:00" />
 
 
     
@@ -116,8 +116,8 @@ brew install hugo Create Website The Hugo Quickstart Guide gives commands to cre
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2020-07-17T12:56:33&#43;02:00'>
-                July 17, 2020
+              <time datetime='2020-08-05T15:16:33&#43;02:00'>
+                August 5, 2020
               </time>
             </span>
             <span class="reading-time">
@@ -164,7 +164,7 @@ ignore the <code>public/</code> forlder. We will later on push this folder to an
 <p>Go to <a href="www.github.com">github</a> and create a new repository with the name <code>&lt;YOURUSERNAME&gt;.github.io</code>. Your html files
 will be saved in this repository. Before we push our website to github, we need to remove the <code>public/</code> folder:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rm -rf public
-</code></pre></div><p>In <code>config.toml</code> change the line setting the baseurl to: <code>baseurl = &quot;/&quot;</code>.</p>
+</code></pre></div><p>In <code>config.toml</code> change the line setting the baseurl to: <code>baseurl = &quot;https://&lt;YOURUSERNAME&gt;.github.io/&quot;</code>.</p>
 <p>Now we need to add a git submodule in your <code>blog</code> folder that has a remote in you newly created
 <code>&lt;YOURUSERNAME&gt;.github.io</code>:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git submodule add -b master https://github.com/&lt;YOURUSERNAME&gt;/&lt;YOURUSERNAME&gt;.github.io.git public
@@ -177,7 +177,8 @@ git add .
 git commit -m <span style="color:#d14">&#34;initial commit&#34;</span>
 git push
 </code></pre></div><p>On github, in the <code>&lt;YOURUSERNAME&gt;.github.io</code> repository, go to settings and scroll down. There should be a section
-called &lsquo;Github Pages&rsquo;. Here, it should say: &lsquo;Your site is published at https://<!-- raw HTML omitted -->.github.io/&rsquo;</p>
+called &lsquo;Github Pages&rsquo;. Here, it should say: &lsquo;Your site is published at https://<!-- raw HTML omitted -->.github.io/&rsquo;. The site
+might take a few minutes to show up, this also applies to changes being visible when updating the site.</p>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hugo tutorial on how to publish a site to github.io</a></li>

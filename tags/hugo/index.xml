@@ -6,7 +6,7 @@
     <description>Recent content in hugo on Tim de Klijn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2020 12:56:33 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 15:16:33 +0200</lastBuildDate>
     
 	<atom:link href="https://timdeklijn.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Creating This Blog</title>
       <link>https://timdeklijn.github.io/posts/01-creating-this-blog/</link>
-      <pubDate>Fri, 17 Jul 2020 12:56:33 +0200</pubDate>
+      <pubDate>Wed, 05 Aug 2020 15:16:33 +0200</pubDate>
       
       <guid>https://timdeklijn.github.io/posts/01-creating-this-blog/</guid>
       <description>What is Hugo? Hugo is a static site generator with fast building times. It allows for pages to be written as Markdown and compiles these documents down to html. The reason I choose this framework is that it is fast, under active development and written in Go, a language I really like.
