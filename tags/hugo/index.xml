@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on Tim de Klijn</title>
-    <link>timdeklijn.github.io/tags/hugo/</link>
+    <link>https://timdeklijn.github.io/tags/hugo/</link>
     <description>Recent content in hugo on Tim de Klijn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 17 Jul 2020 12:56:33 +0200</lastBuildDate>
     
-	<atom:link href="timdeklijn.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://timdeklijn.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating This Blog</title>
-      <link>timdeklijn.github.io/posts/02-creating-this-blog/</link>
+      <link>https://timdeklijn.github.io/posts/02-creating-this-blog/</link>
       <pubDate>Fri, 17 Jul 2020 12:56:33 +0200</pubDate>
       
-      <guid>timdeklijn.github.io/posts/02-creating-this-blog/</guid>
+      <guid>https://timdeklijn.github.io/posts/02-creating-this-blog/</guid>
       <description>What is Hugo? Hugo is a static site generator with fast building times. It allows for pages to be written as Markdown and compiles these documents down to html. The reason I choose this framework is that it is fast, under active development and written in Go, a language I really like.
 Install Hugo First install Hugo, for MacOS this can be done using homebrew:
 brew install hugo Create Website The Hugo Quickstart Guide gives commands to create an initial website called &amp;ldquo;blog&amp;rdquo;:</description>
