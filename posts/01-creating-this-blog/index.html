@@ -7,23 +7,20 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Tim de Klijn">
-    <meta name="description" content="What is Hugo? Hugo is a static site generator with fast building times. It allows for pages to be written as Markdown and compiles these documents down to html. The reason I choose this framework is that it is fast, under active development and written in Go, a language I really like.
-Install Hugo First install Hugo, for MacOS this can be done using homebrew:
-brew install hugo Create Website The Hugo Quickstart Guide gives commands to create an initial website called &ldquo;blog&rdquo;:">
+    <meta name="description" content="While building this website I documented my steps and decided that is should be my first blog post on this site. The tools used for building this website are: Hugo and Github Pages.
+What is Hugo? Hugo is a static site generator with fast building times. It allows for pages to be written in Markdown and compiles these documents html. The reason I choose this framework is that it is fast, customizable, under active development and written in Go, a language I really like.">
     <meta name="keywords" content="blog,developer,personal,Data Science,data engineering">
 
     
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating This Blog"/>
-<meta name="twitter:description" content="What is Hugo? Hugo is a static site generator with fast building times. It allows for pages to be written as Markdown and compiles these documents down to html. The reason I choose this framework is that it is fast, under active development and written in Go, a language I really like.
-Install Hugo First install Hugo, for MacOS this can be done using homebrew:
-brew install hugo Create Website The Hugo Quickstart Guide gives commands to create an initial website called &ldquo;blog&rdquo;:"/>
+<meta name="twitter:description" content="While building this website I documented my steps and decided that is should be my first blog post on this site. The tools used for building this website are: Hugo and Github Pages.
+What is Hugo? Hugo is a static site generator with fast building times. It allows for pages to be written in Markdown and compiles these documents html. The reason I choose this framework is that it is fast, customizable, under active development and written in Go, a language I really like."/>
 
     <meta property="og:title" content="Creating This Blog" />
-<meta property="og:description" content="What is Hugo? Hugo is a static site generator with fast building times. It allows for pages to be written as Markdown and compiles these documents down to html. The reason I choose this framework is that it is fast, under active development and written in Go, a language I really like.
-Install Hugo First install Hugo, for MacOS this can be done using homebrew:
-brew install hugo Create Website The Hugo Quickstart Guide gives commands to create an initial website called &ldquo;blog&rdquo;:" />
+<meta property="og:description" content="While building this website I documented my steps and decided that is should be my first blog post on this site. The tools used for building this website are: Hugo and Github Pages.
+What is Hugo? Hugo is a static site generator with fast building times. It allows for pages to be written in Markdown and compiles these documents html. The reason I choose this framework is that it is fast, customizable, under active development and written in Go, a language I really like." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://timdeklijn.github.io/posts/01-creating-this-blog/" />
 <meta property="article:published_time" content="2020-08-05T15:16:33+02:00" />
@@ -85,11 +82,11 @@ brew install hugo Create Website The Hugo Quickstart Guide gives commands to cre
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://timdeklijn.github.io/posts/">Blog</a>
+            <a class="navigation-link" href="https://timdeklijn.github.io/about/">About</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://timdeklijn.github.io/about/">About</a>
+            <a class="navigation-link" href="https://timdeklijn.github.io/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
@@ -122,10 +119,13 @@ brew install hugo Create Website The Hugo Quickstart Guide gives commands to cre
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              2-minute read
+              3-minute read
             </span>
           </div>
-          
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://timdeklijn.github.io/categories/tutorial/">tutorial</a></div>
+
           <div class="tags">
   <i class="fas fa-tag"></i>
     <a href="https://timdeklijn.github.io/tags/hugo/">hugo</a>
@@ -137,14 +137,20 @@ brew install hugo Create Website The Hugo Quickstart Guide gives commands to cre
 
       <div>
         
-        <h2 id="what-is-hugo">What is Hugo?</h2>
-<p>Hugo is a static site generator with fast building times. It allows for pages to be written as Markdown and compiles
-these documents down to html. The reason I choose this framework is that it is fast, under active development and
+        <p>While building this website I documented my steps and decided that is should be my first blog post on this site. The
+tools used for building this website are: <a href="https://gohugo.io/">Hugo</a> and <a href="https://pages.github.com/">Github Pages</a>.</p>
+<h2 id="what-is-hugo">What is Hugo?</h2>
+<p>Hugo is a static site generator with fast building times. It allows for pages to be written in Markdown and compiles
+these documents html. The reason I choose this framework is that it is fast, customizable, under active development and
 written in Go, a language I really like.</p>
 <h2 id="install-hugo">Install Hugo</h2>
 <p>First install Hugo, for MacOS this can be done using <a href="https://brew.sh/">homebrew</a>:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install hugo
-</code></pre></div><h2 id="create-website">Create Website</h2>
+</code></pre></div><h2 id="what-is-github-pages">What is Github Pages?</h2>
+<p><a href="https://pages.github.com/">Github Pages</a> is a tool from github that builds and publishes a website from a github
+repository. The setup is easy and because it is serving a website from a repository it makes version controlling a
+web site really easy.</p>
+<h2 id="create-website">Create Website</h2>
 <p>The <a href="https://gohugo.io/getting-started/quick-start/">Hugo Quickstart Guide</a> gives commands to create an initial website
 called &ldquo;blog&rdquo;:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new site blog

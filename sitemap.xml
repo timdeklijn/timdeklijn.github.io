@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://timdeklijn.github.io/categories/</loc>
+    <lastmod>2020-08-05T15:16:33+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://timdeklijn.github.io/posts/01-creating-this-blog/</loc>
     <lastmod>2020-08-05T15:16:33+02:00</lastmod>
   </url>
@@ -33,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://timdeklijn.github.io/categories/tutorial/</loc>
+    <lastmod>2020-08-05T15:16:33+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://timdeklijn.github.io/about/</loc>
     <lastmod>2020-07-08T08:01:00+02:00</lastmod>
   </url>
@@ -40,10 +50,6 @@
   <url>
     <loc>https://timdeklijn.github.io/resume/</loc>
     <lastmod>2020-07-08T08:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://timdeklijn.github.io/categories/</loc>
   </url>
   
 </urlset>
