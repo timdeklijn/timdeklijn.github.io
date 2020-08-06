@@ -12,13 +12,12 @@
     
     
     <item>
-      <title>Creating This Blog</title>
+      <title>Create and publish a website using Hugo and github pages</title>
       <link>https://timdeklijn.github.io/posts/01-creating-this-blog/</link>
       <pubDate>Wed, 05 Aug 2020 15:16:33 +0200</pubDate>
       
       <guid>https://timdeklijn.github.io/posts/01-creating-this-blog/</guid>
-      <description>While building this website I documented the steps and decided that how to publish this website should be the first blog post on this site. The tools used for building this website and discussed in this post are: Hugo and Github Pages.
-What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. Reasons to choose this framework are that it is fast, customizable and under active development.</description>
+      <description>Creating a personal website or blog enables people to communicate findings and opinions easily and unfiltered. Websites let people to showcase their projects can serve as a resume when looking for a job. Not everyone can and wants to spend time to build up a personal website from scratch. In this blogpost a quick and simple way to create a customizable website is described. The tools used for building this website and discussed in this post are: Hugo and Github Pages.</description>
     </item>
     
   </channel>

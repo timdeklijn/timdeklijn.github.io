@@ -7,20 +7,17 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Tim de Klijn">
-    <meta name="description" content="While building this website I documented the steps and decided that how to publish this website should be the first blog post on this site. The tools used for building this website and discussed in this post are: Hugo and Github Pages.
-What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. Reasons to choose this framework are that it is fast, customizable and under active development.">
+    <meta name="description" content="Creating a personal website or blog enables people to communicate findings and opinions easily and unfiltered. Websites let people to showcase their projects can serve as a resume when looking for a job. Not everyone can and wants to spend time to build up a personal website from scratch. In this blogpost a quick and simple way to create a customizable website is described. The tools used for building this website and discussed in this post are: Hugo and Github Pages.">
     <meta name="keywords" content="blog,developer,personal,Data Science,data engineering">
 
     
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Creating This Blog"/>
-<meta name="twitter:description" content="While building this website I documented the steps and decided that how to publish this website should be the first blog post on this site. The tools used for building this website and discussed in this post are: Hugo and Github Pages.
-What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. Reasons to choose this framework are that it is fast, customizable and under active development."/>
+<meta name="twitter:title" content="Create and publish a website using Hugo and github pages"/>
+<meta name="twitter:description" content="Creating a personal website or blog enables people to communicate findings and opinions easily and unfiltered. Websites let people to showcase their projects can serve as a resume when looking for a job. Not everyone can and wants to spend time to build up a personal website from scratch. In this blogpost a quick and simple way to create a customizable website is described. The tools used for building this website and discussed in this post are: Hugo and Github Pages."/>
 
-    <meta property="og:title" content="Creating This Blog" />
-<meta property="og:description" content="While building this website I documented the steps and decided that how to publish this website should be the first blog post on this site. The tools used for building this website and discussed in this post are: Hugo and Github Pages.
-What is Hugo? Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates these documents to html. Reasons to choose this framework are that it is fast, customizable and under active development." />
+    <meta property="og:title" content="Create and publish a website using Hugo and github pages" />
+<meta property="og:description" content="Creating a personal website or blog enables people to communicate findings and opinions easily and unfiltered. Websites let people to showcase their projects can serve as a resume when looking for a job. Not everyone can and wants to spend time to build up a personal website from scratch. In this blogpost a quick and simple way to create a customizable website is described. The tools used for building this website and discussed in this post are: Hugo and Github Pages." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://timdeklijn.github.io/posts/01-creating-this-blog/" />
 <meta property="article:published_time" content="2020-08-05T15:16:33+02:00" />
@@ -31,7 +28,7 @@ What is Hugo? Hugo is a static site generator with fast building times. It allow
       <base href="https://timdeklijn.github.io/posts/01-creating-this-blog/">
     
     <title>
-  Creating This Blog · Tim de Klijn
+  Create and publish a website using Hugo and github pages · Tim de Klijn
 </title>
 
     
@@ -115,7 +112,7 @@ What is Hugo? Hugo is a static site generator with fast building times. It allow
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Creating This Blog</h1>
+          <h1 class="title">Create and publish a website using Hugo and github pages</h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -127,7 +124,7 @@ What is Hugo? Hugo is a static site generator with fast building times. It allow
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              4-minute read
+              5-minute read
             </span>
           </div>
           <div class="categories">
@@ -138,77 +135,92 @@ What is Hugo? Hugo is a static site generator with fast building times. It allow
   <i class="fas fa-tag"></i>
     <a href="https://timdeklijn.github.io/tags/hugo/">hugo</a>
       <span class="separator">•</span>
-    <a href="https://timdeklijn.github.io/tags/github/">github</a></div>
+    <a href="https://timdeklijn.github.io/tags/github-pages/">github pages</a></div>
 
         </div>
       </header>
 
       <div>
         
-        <p>While building this website I documented the steps and decided that how to publish this website should be the first blog
-post on this site. The tools used for building this website and discussed in this post are: <a href="https://gohugo.io/">Hugo</a>
-and <a href="https://pages.github.com/">Github Pages</a>.</p>
-<h2 id="what-is-hugo">What is Hugo?</h2>
+        <p>Creating a personal website or blog enables people to communicate findings and opinions easily and unfiltered. Websites
+let people to showcase their projects can serve as a resume when looking for a job. Not everyone can and wants to spend
+time to build up a personal website from scratch. In this blogpost a quick and simple way to create a customizable
+website is described. The tools used for building this website and discussed in this post are:
+<a href="https://gohugo.io/">Hugo</a> and <a href="https://pages.github.com/">Github Pages</a>.</p>
 <p>Hugo is a static site generator with fast building times. It allows for content to be written in Markdown and translates
-these documents to html. Reasons to choose this framework are that it is fast, customizable and under active
-development.</p>
+these documents to html. Reasons to choose this framework are: it is fast, customizable and under active development.</p>
+<p>Github Pages is a tool from github that builds and publishes a website from a github repository. The setup is easy and
+because it is serving a website from a repository it makes version controlling a website really easy.</p>
 <h2 id="installing-hugo">Installing Hugo</h2>
-<p>On MacOS, Hugo can be installed using <a href="https://brew.sh/">homebrew</a>. In the terminal the following commands downloads and
+<p>On MacOS, Hugo can be installed using <a href="https://brew.sh/">homebrew</a>. In the terminal the following command downloads and
 installs Hugo:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install hugo
-</code></pre></div><h2 id="creating-a-website">Creating a Website</h2>
-<p>To create a static website, a simple hugo template can be created, content can be added, and finally a theme can be
-applied. The <a href="https://gohugo.io/getting-started/quick-start/">Hugo Quickstart Guide</a> supplies commands to create an
-initial framework of a website called &lsquo;blog&rsquo;:</p>
+</code></pre></div><p>The installation instructions for other operating systems can be found
+<a href="https://gohugo.io/getting-started/installing/">here</a>.</p>
+<h2 id="create-a-minimal-website">Create a minimal website</h2>
+<p>The <a href="https://gohugo.io/getting-started/quick-start/">Hugo Quickstart Guide</a> explains how to generate a minimal website
+with a simple commands:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new site blog
-</code></pre></div><p>A theme can be found on a <a href="https://themes.gohugo.io/">theme gallery</a>. Generally, on the theme website there is a good
-explanation on how to install the theme for a hugo website. It will be something like the following:</p>
+</code></pre></div><p>This creates a folder called <code>blog</code> with files that Hugo can convert to a website. The <code>content/</code> folder will contain
+all posts and pages in Markdown format. The configurations of the websites can be found and edited in <code>config.toml</code>.</p>
+<p>Themes can be found in the <a href="https://themes.gohugo.io/">theme gallery</a>. Depending on the goal of the website, it might be
+useful to look for math and code support when picking a theme. Generally, explanation on how to install the theme for a
+site can be found on the theme website. The instructions will be similar to the following:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#fff;font-weight:bold">cd</span> blog
 git init
 git submodule add &lt;theme-repository&gt; themes/&lt;theme-name&gt;
-</code></pre></div><p>Since each theme has a different configuration and setup, the easiest way to apply the theme is to copy <code>theme.toml</code>
-from the <code>themes</code> folder to <code>config.toml</code> in the main folder of the project.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cp themes/exampleSite/config.toml config.toml
-</code></pre></div><p>A new post can be added by manually creating a Markdown file, but an faster solution is to use the following command:</p>
+</code></pre></div><p>Here we move into our newly created website folder, create a git repository and add the theme repository as a submodule.
+When the theme repository is updated, the changes can be synchronised by moving into the theme folder
+(<code>cd themes/&lt;theme-name&gt;</code>) and run <code>git pull</code>. Most themes repositories contain an exampleSite folder. In this folder a
+<code>config.toml</code> can be found. The easiest method to apply the theme is to copy this file to the root folder of the
+project:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cp themes/&lt;theme-name&gt;/exampleSite/config.toml config.toml
+</code></pre></div><p>A new post can be added by manually creating a Markdown file, but a faster method is to use this Hugo command:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new posts/&lt;name-of-post&gt;.md
-</code></pre></div><p>This ensures that a header containing metadata is added to the Markdown file. Notice the <code>draft = true</code> flag. This
-signals hugo to not include this markdown file into the build that will be published. It will however be visible in
-a development server.</p>
+</code></pre></div><p>This ensures that a header containing metadata is added to the Markdown file. The template for this file can be found
+and edited in the <code>archetypes/</code> folder in the project root. Notice the <code>draft = true</code> flag. This signals hugo to not
+include this markdown file into the build that will be published. These draft files will be visible in a development
+server.</p>
 <p>When the post is finished, run the following command to build the website and run a development server:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo server -D
-</code></pre></div><p>The development server show all files that are in the <code>content</code> folder of your blog, also files with <code>draft</code> set to
-<code>true</code>. When making changes to files the server will rebuild the website on save.</p>
-<p>If the site looks good enough to be published, close the server using <code>CTRL-C</code>.</p>
-<h2 id="what-is-github-pages">What is Github Pages?</h2>
-<p><a href="https://pages.github.com/">Github Pages</a> is a tool from github that builds and publishes a website from a github
-repository. The setup is easy and because it is serving a website from a repository it makes version controlling a
-website really easy.</p>
-<h2 id="publish-the-blog-on-githubio">Publish the blog on github.io</h2>
-<p>First, create a repository for you blog files (call it <code>blog</code> for example). Make sure that in your <code>.gitignore</code> you
-ignore the <code>public/</code> forlder. We will later on push this folder to another repoisory to publish the website.</p>
-<p>Go to <a href="www.github.com">github</a> and create a new repository with the name <code>&lt;YOURUSERNAME&gt;.github.io</code>. Your html files
-will be saved in this repository. Before we push our website to github, we need to remove the <code>public/</code> folder:</p>
+</code></pre></div><p>The website can be viewed in the browser on <a href="http://localhost:1313">http://localhost:1313</a>.</p>
+<p>The development server shows a website created from the website template and all files in the <code>content</code> folder of the
+website, including files with <code>draft</code> set to <code>true</code> in the header. When making changes to files, the server will rebuild
+the website when the files are saved.</p>
+<p>When the site is ready to be published, close the server using <code>CTRL-C</code>.</p>
+<h2 id="publish-the-blog-on-github-pages">Publish the blog on github pages</h2>
+<p>First, create a repository for the blog files (choose a logical and descriptive name like <code>blog</code>). Create a file called
+<code>.gitignore</code> and add the following lines to it:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">public/
+resources/
+</code></pre></div><p>The public folder we will add as a submodule with a different remote location later. The main repository can now be
+committed to version control.</p>
+<p>Go to <a href="http://www.github.com">github</a> and create a new repository with the name <code>&lt;YOURUSERNAME&gt;.github.io</code>. Your html
+files will be saved in this repository. Before we push our website to github, we need to remove the <code>public/</code> folder:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rm -rf public
-</code></pre></div><p>In <code>config.toml</code> change the line setting the baseurl to: <code>baseurl = &quot;https://&lt;YOURUSERNAME&gt;.github.io/&quot;</code>.</p>
+</code></pre></div><p>In <code>config.toml</code> change the line setting the baseurl to: <code>baseurl = &quot;https://&lt;YOURUSERNAME&gt;.github.io/&quot;</code>. This will
+ensure all the links and styles are applied correctly when publishing the site.</p>
 <p>Now we need to add a git submodule in your <code>blog</code> folder that has a remote in you newly created
 <code>&lt;YOURUSERNAME&gt;.github.io</code>:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git submodule add -b master https://github.com/&lt;YOURUSERNAME&gt;/&lt;YOURUSERNAME&gt;.github.io.git public
 </code></pre></div><p>The website can be build using the &lsquo;hugo&rsquo; command:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo
-</code></pre></div><p>Now go into the public folder, add and commit the changes and push the files to the
-remote repository:</p>
+</code></pre></div><p>Now go into the public folder, add and commit the changes and push the files to the  remote repository:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#fff;font-weight:bold">cd</span> public
 git add .
 git commit -m <span style="color:#0ff;font-weight:bold">&#34;initial commit&#34;</span>
 git push
 </code></pre></div><p>On github, in the <code>&lt;YOURUSERNAME&gt;.github.io</code> repository, go to settings and scroll down. There should be a section
-called &lsquo;Github Pages&rsquo;. Here, it should say: &lsquo;Your site is published at https://<!-- raw HTML omitted -->.github.io/&rsquo;. The site
-might take a few minutes to show up, this also applies to changes being visible when updating the site.</p>
+called &lsquo;Github Pages&rsquo;. Here, it should say: <code>Your site is published at https://&lt;YOURUSERNAME&gt;.github.io/</code>. it might
+take a few minutes for the site to appear online, this also applies to changes after updating the site.</p>
 <p>On the Hugo website the authors suggest automating the deployment of the website to github.io using a simple shell
-<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">script</a>. Once the script is copy-pasted into a bash
-scripted called deploy.sh, the following command can be used to make the script an executable:</p>
+<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">script</a>. The script can be copy-pasted into a bash
+file called deploy.sh in the root folder of the project. The following commands can be used to make the script an
+executable and execute it:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">chmod +x deploy.sh
-</code></pre></div><p>Finally, the changes made to the blog repository should be commited to allow working on the blog from other devices.</p>
+./deploy.sh
+</code></pre></div><p>Finally, the changes made to the main repository should be committed to make it possible to work on the website from
+other devices.</p>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://gohugo.io/getting-started/quick-start/">Hugo quickstart</a></li>
@@ -225,6 +237,20 @@ scripted called deploy.sh, the following command can be used to make the script 
         
         
         
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-174687407-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
       </footer>
     </article>
 
@@ -264,6 +290,19 @@ scripted called deploy.sh, the following command can be used to make the script 
     
 
     
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-174687407-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
 
     
 
